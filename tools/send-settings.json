@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__claude_ai_Gmail__.*",
+        "hooks": [ { "type": "command", "command": "python3 -I /home/claude/projets/create-app/kasalma/site/tools/guard-send.py" } ]
+      }
+    ]
+  }
+}

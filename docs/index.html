@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasalma · l'app qui allège la charge mentale de la famille</title>
+  <meta name="description" content="Dis ce qui arrive : un anniversaire, une activité, un repas chez Mamie. Kasalma anticipe tout ce qu'il faut prévoir et le répartit dans la famille. Bientôt sur Android et iPhone.">
+  <link rel="canonical" href="https://kasalma.com/">
+  <meta name="theme-color" content="#FFF8F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#33231E" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kasalma">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://kasalma.com/">
+  <meta property="og:title" content="Kasalma, la maison qui pense à ce qu'on oublie">
+  <meta property="og:description" content="L'app qui allège la charge mentale de la famille : elle anticipe ce qu'il faut prévoir et le partage dans la tribu.">
+  <meta property="og:image" content="https://kasalma.com/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alma, la petite flamme de Kasalma, à côté de l'écran Aujourd'hui de l'app.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Nunito_800ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kasalma.com/#org",
+        "name": "Kasalma",
+        "url": "https://kasalma.com/",
+        "logo": "https://kasalma.com/assets/alma.svg",
+        "email": "contact@kasalma.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kasalma.com/#site",
+        "name": "Kasalma",
+        "url": "https://kasalma.com/",
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://kasalma.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Quand sort Kasalma ?", "acceptedAnswer": { "@type": "Answer", "text": "Kasalma est en cours de développement, pour Android et iPhone. Inscris-toi à la liste d'attente : on te prévient dès qu'elle est prête." } },
+          { "@type": "Question", "name": "Est-ce que c'est gratuit ?", "acceptedAnswer": { "@type": "Answer", "text": "L'essentiel sera gratuit. Une offre premium, valable pour toute la tribu, ajoutera des fonctions en plus." } },
+          { "@type": "Question", "name": "Faut-il que tout le monde ait l'app ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. Les enfants n'ont pas besoin de téléphone : tu crées pour eux un simple profil. L'autre adulte peut rejoindre la tribu quand il veut, et tu peux commencer seule ou seul." } },
+          { "@type": "Question", "name": "Est-ce que ça remplace mon agenda ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, Kasalma s'ajoute à ton agenda. Tu peux y abonner Google Agenda ou le calendrier de l'iPhone pour voir les événements et les trajets à côté du reste." } },
+          { "@type": "Question", "name": "Que deviennent nos données ?", "acceptedAnswer": { "@type": "Answer", "text": "Elles sont hébergées en France, sans publicité ni revente. Tu peux les exporter et supprimer ton compte depuis l'app, à tout moment." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap wrap-wide">
+      <a class="brand" href="./" aria-current="page"><img src="assets/alma.svg" alt="" width="32" height="37">Kasalma</a>
+      <nav class="site-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#comment">Comment ça marche</a></li>
+          <li><a href="#questions">Questions</a></li>
+          <li><a class="nav-cta" href="#attente">Être prévenu·e</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1" class="landing">
+    <section class="hero-split" aria-labelledby="titre">
+      <div class="wrap wrap-wide hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Bientôt sur Android et iPhone</p>
+          <h1 id="titre">La maison qui pense à ce qu'on oublie</h1>
+          <p class="lead">Tu dis ce qui arrive : un anniversaire, une activité, un repas chez Mamie. Kasalma anticipe tout ce que ça implique, le répartit dans la tribu et te montre ce qu'il y a à faire aujourd'hui.</p>
+
+          <form class="waitlist" data-waitlist action="https://formspree.io/f/FORMSPREE_ID" method="POST" aria-labelledby="attente-titre-1">
+            <h2 id="attente-titre-1" class="waitlist-title">Sois prévenu·e de la sortie</h2>
+            <div class="waitlist-row">
+              <label class="sr-only" for="email-1">Ton adresse e-mail</label>
+              <input id="email-1" type="email" name="email" required autocomplete="email" placeholder="ton@email.fr">
+              <button class="btn" type="submit">Me prévenir</button>
+            </div>
+            <fieldset class="device">
+              <legend>Ton téléphone <span class="optional">(facultatif)</span></legend>
+              <label><input type="radio" name="telephone" value="android"> Android</label>
+              <label><input type="radio" name="telephone" value="iphone"> iPhone</label>
+            </fieldset>
+            <input type="hidden" name="source" value="accueil-haut">
+            <input type="hidden" name="_subject" value="Liste d'attente Kasalma">
+            <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+            <p class="fine">Un seul e-mail à la sortie de l'app, rien d'autre. <a href="confidentialite/#site">Ce qu'on fait de ton adresse</a>.</p>
+            <p class="status" data-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="hero-visual">
+          <picture>
+            <img src="assets/img/aujourdhui.webp" width="600" height="1227" fetchpriority="high"
+                 alt="Écran Aujourd'hui de Kasalma : Alma dans sa cheminée dit « Coucou la tribu ! Je veille sur la maison », 12 étoiles pour la tribu, et la première tâche du jour : demander à Papi et Mamie s'il faut apporter quelque chose, avant 12 h, confiée à Papa.">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-label="Notre idée">
+      <div class="wrap">
+        <p class="band-quote">Ce que tu portes en silence devient visible, et se partage.</p>
+      </div>
+    </section>
+
+    <section id="comment" class="section" aria-labelledby="comment-titre">
+      <div class="wrap wrap-wide">
+        <h2 id="comment-titre" class="section-title">Comment ça marche</h2>
+        <ol class="steps">
+          <li class="step">
+            <img src="assets/img/ajouter.webp" width="600" height="1227" loading="lazy"
+                 alt="Écran Nouvel événement : Anniversaire et Soirée pyjama sont cochés, pour Léa, chez Chloé, vendredi 27 novembre de 17 h au samedi 10 h. Le bouton dit « Enregistrer l'événement et 5 tâches ».">
+            <h3><span class="step-num" aria-hidden="true">1</span> Tu dis ce qui arrive</h3>
+            <p>Un anniversaire, une soirée pyjama, le judo du mercredi, Noël chez Mamie. Le type, la date, pour qui : moins de 10 secondes.</p>
+          </li>
+          <li class="step">
+            <div class="example" role="group" aria-labelledby="exemple-titre">
+              <p id="exemple-titre" class="example-title">Anniversaire de Chloé + soirée pyjama, vendredi</p>
+              <ul>
+                <li><span>Acheter un cadeau pour Chloé</span><span class="due">mercredi</span></li>
+                <li><span>Confirmer l'heure de fin avec ses parents</span><span class="due">mercredi</span></li>
+                <li><span>Préparer le sac de nuit : pyjama, brosse à dents, doudou</span><span class="due">vendredi midi</span></li>
+                <li><span>Emmener Léa</span><span class="due">vendredi 17 h</span></li>
+                <li><span>Récupérer Léa</span><span class="due">samedi 10 h</span></li>
+              </ul>
+            </div>
+            <h3><span class="step-num" aria-hidden="true">2</span> Kasalma anticipe</h3>
+            <p>L'app propose tout ce qu'il faudra faire, chacun avec son échéance. Tu gardes, tu retires, tu ajustes d'un geste : rien n'est imposé.</p>
+          </li>
+          <li class="step">
+            <img src="assets/img/qui-porte-quoi.webp" width="600" height="1227" loading="lazy"
+                 alt="Écran Qui porte quoi : cette semaine, Maman a 9 tâches, Papa 6, Tom 2, Léa 1, et 1 tâche est pour tout le monde. 19 tâches et 4 mercis échangés.">
+            <h3><span class="step-num" aria-hidden="true">3</span> La tribu se répartit</h3>
+            <p>Chacun voit ce qu'il a à faire aujourd'hui. Une tâche sans responsable s'affiche chez tous les adultes, et la charge de la semaine se voit, sans reproche.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="principes-titre">
+      <div class="wrap wrap-wide">
+        <h2 id="principes-titre" class="section-title">Pensée pour être douce</h2>
+        <ul class="features">
+          <li>
+            <h3>Sans culpabiliser</h3>
+            <p>Pas de rouge « en retard », pas de score qui baisse, pas de concours entre parents. Une seule jauge d'étoiles, commune à toute la tribu.</p>
+          </li>
+          <li>
+            <h3>Alma veille</h3>
+            <p>La petite flamme du foyer grandit avec la tribu. Elle s'inquiète seulement quand un vrai risque approche, comme un trajet sans conducteur, et se calme dès que quelqu'un s'en occupe.</p>
+          </li>
+          <li>
+            <h3>Accessible à tous</h3>
+            <p>Jamais la couleur seule pour se repérer, de grands textes possibles, un mode sombre, et une app utilisable avec un lecteur d'écran.</p>
+          </li>
+          <li>
+            <h3>Tes données en France</h3>
+            <p>Hébergées en France, sans publicité ni revente. Les enfants n'ont pas de compte : juste un prénom.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="questions" class="section" aria-labelledby="questions-titre">
+      <div class="wrap">
+        <h2 id="questions-titre" class="section-title">Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Quand sort Kasalma ?</summary>
+            <p>Kasalma est en cours de développement, pour Android et iPhone. Inscris-toi à la liste d'attente : on te prévient dès qu'elle est prête.</p>
+          </details>
+          <details>
+            <summary>Est-ce que c'est gratuit ?</summary>
+            <p>L'essentiel sera gratuit. Une offre premium, valable pour toute la tribu, ajoutera des fonctions en plus.</p>
+          </details>
+          <details>
+            <summary>Faut-il que tout le monde ait l'app ?</summary>
+            <p>Non. Les enfants n'ont pas besoin de téléphone : tu crées pour eux un simple profil. L'autre adulte peut rejoindre la tribu quand il veut, et tu peux commencer seule ou seul.</p>
+          </details>
+          <details>
+            <summary>Est-ce que ça remplace mon agenda ?</summary>
+            <p>Non, Kasalma s'ajoute à ton agenda. Tu peux y abonner Google Agenda ou le calendrier de l'iPhone pour voir les événements et les trajets à côté du reste.</p>
+          </details>
+          <details>
+            <summary>Que deviennent nos données ?</summary>
+            <p>Elles sont hébergées en France, sans publicité ni revente. Tu peux les exporter et supprimer ton compte depuis l'app, à tout moment. Tout est expliqué dans la <a href="confidentialite/">politique de confidentialité</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="attente" class="section section-hearth" aria-labelledby="attente-titre-2">
+      <div class="wrap">
+        <img class="cta-alma" src="assets/alma.svg" alt="" width="96" height="112">
+        <form class="waitlist waitlist-center" data-waitlist action="https://formspree.io/f/FORMSPREE_ID" method="POST" aria-labelledby="attente-titre-2">
+          <h2 id="attente-titre-2" class="section-title">Alma te prévient dès que c'est prêt</h2>
+          <div class="waitlist-row">
+            <label class="sr-only" for="email-2">Ton adresse e-mail</label>
+            <input id="email-2" type="email" name="email" required autocomplete="email" placeholder="ton@email.fr">
+            <button class="btn" type="submit">Me prévenir</button>
+          </div>
+          <fieldset class="device">
+            <legend>Ton téléphone <span class="optional">(facultatif)</span></legend>
+            <label><input type="radio" name="telephone" value="android"> Android</label>
+            <label><input type="radio" name="telephone" value="iphone"> iPhone</label>
+          </fieldset>
+          <input type="hidden" name="source" value="accueil-bas">
+          <input type="hidden" name="_subject" value="Liste d'attente Kasalma">
+          <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+          <p class="fine">Un seul e-mail à la sortie de l'app, rien d'autre. <a href="confidentialite/#site">Ce qu'on fait de ton adresse</a>.</p>
+          <p class="status" data-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap wrap-wide">
+      <ul>
+        <li><a href="cgu/">Conditions d'utilisation</a></li>
+        <li><a href="confidentialite/">Confidentialité</a></li>
+        <li><a href="mailto:contact@kasalma.com">contact@kasalma.com</a></li>
+      </ul>
+      <p>Kasalma, l'âme de la maison.</p>
+    </div>
+  </footer>
+</body>
+</html>
