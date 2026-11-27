@@ -42,12 +42,10 @@ Les identifiants viennent de PokerPerf : même compte Google (`~/.config/pokerpe
 
 ## À compléter avant publication
 
-Les trous sont surlignés dans les pages (classe `todo`) :
+L'éditeur (repris de PokerPerf), le service d'e-mails (Brevo, comme PokerPerf) et contact@kasalma.com sont en place. Il reste :
 
-- **Éditeur** : nom, statut juridique, adresse, SIRET, directeur de la publication (CGU § 1, confidentialité § 1).
-- **Service d'envoi d'e-mails** (codes de connexion, invitations) : nom et pays (confidentialité § 6).
-- **Médiateur de la consommation** : obligatoire pour vendre à des particuliers (CGU § 15).
-- Créer l'adresse **contact@kasalma.com**, utilisée partout.
+- **Médiateur de la consommation** : il est obligatoire pour vendre à des particuliers. Le nommer dans les CGU (§ 15) avant d'ouvrir l'offre premium.
+- **Vérifier le service d'e-mails** : si l'API Kasalma n'utilise pas Brevo, corriger la confidentialité (§ 6).
 - Ajouter au tableau des prestataires tout nouvel outil : gestion d'abonnements (RevenueCat…), suivi d'erreurs (Sentry…).
 
 Les textes légaux décrivent la v1 prévue dans `../cadrage-v1.md`. Il faut les relire à chaque nouvelle fonction qui touche aux données. Aucun juriste ne les a validés.
