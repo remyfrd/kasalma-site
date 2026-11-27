@@ -1,0 +1,357 @@
+/* Kasalma — site. Couleurs et typo reprises du handoff design (tokens/colors.css, typography.css). */
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito_500Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito_700Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito_800ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+  --font-sans: 'Nunito', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+
+  --bg-app: #FFF8F1;
+  --bg-sunken: #FDEFE4;
+  --surface-card: #FFFDF9;
+  --surface-hearth: #FDEBDD;
+  --border-soft: #F5E0D0;
+  --border-strong: #D4AE97;
+  --text-strong: #5A3A30;
+  --text-body: #5A3A30;
+  --text-muted: #8C6455;
+  --text-link: #B9532F;
+  --accent: #B9532F;
+  --accent-hover: #9E4626;
+  --text-on-accent: #FFFFFF;
+  --gentle-bg: #FFF4E2;
+  --gentle-fg: #94621F;
+  --focus-ring: #4E7563;
+
+  --radius-card: 20px;
+  --radius-pill: 999px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-app: #33231E;
+    --bg-sunken: #2B1D18;
+    --surface-card: #402D26;
+    --surface-hearth: #4A3128;
+    --border-soft: #4A352D;
+    --border-strong: #5A4239;
+    --text-strong: #FBEFE6;
+    --text-body: #FBEFE6;
+    --text-muted: #D9C2B5;
+    --text-link: #F6A882;
+    --accent: #F6A882;
+    --accent-hover: #F9BB9A;
+    --text-on-accent: #33231E;
+    --gentle-bg: #3A2A15;
+    --gentle-fg: #FFD190;
+    --focus-ring: #93C2AC;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-app);
+  color: var(--text-body);
+  font: 500 1.0625rem/1.6 var(--font-sans);
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+a {
+  color: var(--text-link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 10;
+  padding: 12px 18px;
+  background: var(--accent);
+  color: var(--text-on-accent);
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+}
+.skip-link:focus { top: 12px; }
+
+.wrap {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* En-tête */
+.site-header {
+  border-bottom: 1px solid var(--border-soft);
+}
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--text-strong);
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.brand img { width: 32px; height: 37px; }
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  color: var(--text-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--bg-sunken); }
+.site-nav a[aria-current="page"] {
+  background: var(--surface-hearth);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+/* Contenu */
+main { padding: 32px 0 56px; }
+
+h1, h2, h3 {
+  color: var(--text-strong);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: clamp(1.75rem, 1.3rem + 2vw, 2.25rem); line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.375rem; line-height: 1.3; margin: 40px 0 12px; scroll-margin-top: 16px; }
+h3 { font-size: 1.1875rem; line-height: 1.35; margin: 24px 0 8px; }
+
+p, ul, ol, table { margin: 0 0 14px; }
+li + li { margin-top: 6px; }
+strong { font-weight: 800; color: var(--text-strong); }
+
+.meta {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.summary-box {
+  margin: 0 0 32px;
+  padding: 20px 22px;
+  background: var(--surface-hearth);
+  border-radius: var(--radius-card);
+}
+.summary-box h2 { margin-top: 0; font-size: 1.1875rem; }
+.summary-box ul { margin-bottom: 0; }
+
+.toc {
+  margin: 0 0 32px;
+  padding: 18px 22px;
+  background: var(--surface-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+}
+.toc h2 { margin: 0 0 8px; font-size: 1.0625rem; }
+.toc ol { margin: 0; padding-left: 1.4em; }
+.toc li + li { margin-top: 2px; }
+.toc a { display: inline-block; padding: 6px 0; }
+
+/* Mention à compléter avant publication */
+.todo {
+  padding: 0 4px;
+  background: var(--gentle-bg);
+  color: var(--gentle-fg);
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.table-scroll { overflow-x: auto; margin: 0 0 14px; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+caption {
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-strong);
+  padding-bottom: 8px;
+}
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border-soft);
+}
+thead th {
+  background: var(--bg-sunken);
+  color: var(--text-strong);
+  font-weight: 800;
+}
+
+/* Accueil */
+.hero {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 24px 0 8px;
+}
+.hero img { width: 140px; height: auto; margin-bottom: 16px; }
+.hero .tagline {
+  font-size: 1.1875rem;
+  max-width: 32rem;
+  margin: 8px auto 24px;
+}
+.pill {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--surface-hearth);
+  color: var(--text-strong);
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+.cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 560px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+.cards li { margin: 0; }
+.card {
+  display: block;
+  height: 100%;
+  padding: 20px 22px;
+  background: var(--surface-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  color: var(--text-body);
+  text-decoration: none;
+}
+.card:hover { border-color: var(--border-strong); }
+.card strong { display: block; font-size: 1.125rem; color: var(--text-link); margin-bottom: 4px; }
+
+/* Pied de page */
+.site-footer {
+  border-top: 1px solid var(--border-soft);
+  padding: 24px 0 32px;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+.site-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+.site-footer li + li { margin-top: 0; }
+.site-footer a { display: inline-block; padding: 10px 0; }
+.site-footer p { margin: 0; }
+
+/* Sur téléphone, les tableaux deviennent des fiches : chaque cellule affiche son intitulé. */
+@media (max-width: 559px) {
+  table.stack thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  table.stack,
+  table.stack caption,
+  table.stack tbody,
+  table.stack tr,
+  table.stack th,
+  table.stack td {
+    display: block;
+  }
+  table.stack tr {
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    background: var(--surface-card);
+    border: 1px solid var(--border-soft);
+    border-radius: 14px;
+  }
+  table.stack th,
+  table.stack td {
+    padding: 4px 0;
+    border: 0;
+  }
+  table.stack [data-label]::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+  table.stack th[scope="row"]::before { display: none; }
+  table.stack th[scope="row"] { font-size: 1.0625rem; }
+}
