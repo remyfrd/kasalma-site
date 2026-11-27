@@ -1,6 +1,6 @@
 # kasalma-site
 
-Site public de Kasalma (kasalma.com), hébergé sur **GitHub Pages**. Il contient la page d'accueil avec la liste d'attente, les conditions d'utilisation (`/cgu/`) et la politique de confidentialité (`/confidentialite/`). Ces deux dernières adresses sont celles à donner à l'App Store et à Google Play.
+Site public de Kasalma (kasalma.com), hébergé sur **GitHub Pages**. Il contient la page d'accueil avec la liste d'attente, les conditions d'utilisation (`/fr/cgu/`) et la politique de confidentialité (`/fr/confidentialite/`). Ces deux dernières adresses sont celles à donner à l'App Store et à Google Play.
 
 | Dossier | Contenu |
 |---|---|
