@@ -5,7 +5,7 @@
   /* Cloudflare Web Analytics : mesure d'audience sans cookie.
      Coller ici le jeton fourni par Cloudflare (Web Analytics > Add a site > kasalma.com).
      Vide = aucune mesure. Jamais en local, pour ne pas compter nos propres visites. */
-  var CF_BEACON_TOKEN = '';
+  var CF_BEACON_TOKEN = '1cbac80efe624542977195f052f7c6be';
 
   var host = location.hostname;
   var enLigne = /(^|\.)kasalma\.(com|fr)$/.test(host) || /\.github\.io$/.test(host);
